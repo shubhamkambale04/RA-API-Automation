@@ -68,7 +68,7 @@ public class ExtentReportManager implements ITestListener {
 	public void onFinish(ITestContext testContext) {
 		extent.flush();
 
-		String pathofExtentReport = System.getProperty(".\\Reports\\" + repName);
+		String pathofExtentReport = System.getProperty("user.dir") + "\\Reports\\" + repName;
 		File extentReport = new File(pathofExtentReport);
 
 		try {
