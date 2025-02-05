@@ -44,3 +44,12 @@
 11:57:26:291 [main] INFO  api.test.UserTests - updated user displayed
 11:57:26:302 [main] INFO  api.test.UserTests - deleting user
 11:57:27:558 [main] INFO  api.test.UserTests - user deleted
+12:08:02:647 [main] INFO  api.test.UserTests - creating user
+12:08:07:500 [main] INFO  api.test.UserTests - user created
+12:08:07:516 [main] INFO  api.test.UserTests - reading user
+12:08:08:817 [main] INFO  api.test.UserTests - user displayed
+12:08:08:841 [main] INFO  api.test.UserTests - updating user
+12:08:10:114 [main] INFO  api.test.UserTests - user updated
+12:08:11:359 [main] INFO  api.test.UserTests - updated user displayed
+12:08:11:380 [main] INFO  api.test.UserTests - deleting user
+12:08:12:677 [main] INFO  api.test.UserTests - user deleted
