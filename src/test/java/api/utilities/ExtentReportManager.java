@@ -3,9 +3,14 @@ package api.utilities;
 import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
+import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import org.apache.commons.mail.DefaultAuthenticator;
+import org.apache.commons.mail.EmailException;
+import org.apache.commons.mail.ImageHtmlEmail;
+import org.apache.commons.mail.resolver.DataSourceUrlResolver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -29,7 +34,7 @@ public class ExtentReportManager implements ITestListener {
 		repName = "Test-Report-" + timeStamp + ".html";
 
 		sparkReporter = new ExtentSparkReporter(".\\Reports\\" + repName);
-		sparkReporter.config().setDocumentTitle("RestAssuredAutomationProject");
+		sparkReporter.config().setDocumentTitle("APIAutomationProject");
 		sparkReporter.config().setReportName("Pet Store Users API");
 		sparkReporter.config().setTheme(Theme.DARK);
 
@@ -73,6 +78,45 @@ public class ExtentReportManager implements ITestListener {
 
 		try {
 			Desktop.getDesktop().browse(extentReport.toURI());
+			Thread.sleep(5000); // Allow some time for the report to open before attempting to close
+			closeBrowser();
+			// mailSent();
+		} catch (IOException | InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void mailSent() {
+		try {
+			File reportFile = new File(System.getProperty("user.dir") + "\\Reports\\" + repName);
+			URL url = reportFile.toURI().toURL();
+
+			ImageHtmlEmail email = new ImageHtmlEmail();
+			email.setDataSourceResolver(new DataSourceUrlResolver(url));
+			email.setHostName("smtp.googlemail.com");
+			email.setSmtpPort(465);
+			email.setAuthenticator(new DefaultAuthenticator("email@example.com", "password"));
+			email.setSSLOnConnect(true);
+			email.setFrom("sender@example.com").setSubject(repName).setMsg(repName); // Sender
+			email.addTo("receiver@example.com"); // Receiver
+			email.attach(reportFile).send();
+		} catch (IOException | EmailException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void closeBrowser() {
+		String os = System.getProperty("os.name").toLowerCase();
+		try {
+			if (os.contains("win")) {
+				Runtime.getRuntime().exec("taskkill /F /IM chrome.exe"); // Kills Chrome browser
+				Runtime.getRuntime().exec("taskkill /F /IM msedge.exe"); // Kills Edge browser
+				Runtime.getRuntime().exec("taskkill /F /IM firefox.exe"); // Kills Firefox browser
+			} else if (os.contains("mac")) {
+				Runtime.getRuntime().exec("pkill -f 'Google Chrome'");
+				Runtime.getRuntime().exec("pkill -f 'Safari'");
+				Runtime.getRuntime().exec("pkill -f 'Firefox'");
+			}
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
