@@ -5,8 +5,9 @@
     <classes>
       <class name="api.test.DataDrivenTests">
         <methods>
-          <include name="testDeleteUseDDT" invocation-numbers="0 1 2 3 4"/>
-          <include name="testPostUserDDT"/>
+          <include name="testDeleteUserDDT" invocation-numbers="0 1 3"/>
+          <include name="afterEachTest"/>
+          <include name="beforeEachTest"/>
         </methods>
       </class> <!-- api.test.DataDrivenTests -->
     </classes>

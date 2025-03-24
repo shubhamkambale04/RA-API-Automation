@@ -8,24 +8,125 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">14</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">25,238</td><td></td><td></td></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">7</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">38,853</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="10">api.test.DataDrivenTests</td><td><a href="#m0">testDeleteUseDDT</a></td><td rowspan="5">1735799901279</td><td rowspan="5">1207</td></tr><tr class="passedeven"><td><a href="#m1">testDeleteUseDDT</a></td></tr><tr class="passedeven"><td><a href="#m2">testDeleteUseDDT</a></td></tr><tr class="passedeven"><td><a href="#m3">testDeleteUseDDT</a></td></tr><tr class="passedeven"><td><a href="#m4">testDeleteUseDDT</a></td></tr><tr class="passedeven"><td><a href="#m5">testPostUserDDT</a></td><td rowspan="5">1735799898755</td><td rowspan="5">1177</td></tr><tr class="passedeven"><td><a href="#m6">testPostUserDDT</a></td></tr><tr class="passedeven"><td><a href="#m7">testPostUserDDT</a></td></tr><tr class="passedeven"><td><a href="#m8">testPostUserDDT</a></td></tr><tr class="passedeven"><td><a href="#m9">testPostUserDDT</a></td></tr><tr class="passedodd"><td rowspan="4">api.test.UserTests</td><td><a href="#m10">testDeleteUser</a></td><td rowspan="1">1735799891371</td><td rowspan="1">1307</td></tr><tr class="passedodd"><td><a href="#m11">testGetUser</a></td><td rowspan="1">1735799887514</td><td rowspan="1">1308</td></tr><tr class="passedodd"><td><a href="#m12">testPostUser</a></td><td rowspan="1">1735799882628</td><td rowspan="1">4872</td></tr><tr class="passedodd"><td><a href="#m13">testUpdateUser</a></td><td rowspan="1">1735799888834</td><td rowspan="1">2526</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">api.test.DataDrivenTests</td><td><a href="#m0">testDeleteUserDDT</a></td><td rowspan="3">1742812834129</td><td rowspan="3">1469</td></tr><tr class="failedeven"><td><a href="#m1">testDeleteUserDDT</a></td></tr><tr class="failedeven"><td><a href="#m2">testDeleteUserDDT</a></td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="7">api.test.DataDrivenTests</td><td><a href="#m3">testDeleteUserDDT</a></td><td rowspan="2">1742812848003</td><td rowspan="2">1426</td></tr><tr class="passedeven"><td><a href="#m4">testDeleteUserDDT</a></td></tr><tr class="passedeven"><td><a href="#m5">testPostUserDDT</a></td><td rowspan="5">1742812830311</td><td rowspan="5">1697</td></tr><tr class="passedeven"><td><a href="#m6">testPostUserDDT</a></td></tr><tr class="passedeven"><td><a href="#m7">testPostUserDDT</a></td></tr><tr class="passedeven"><td><a href="#m8">testPostUserDDT</a></td></tr><tr class="passedeven"><td><a href="#m9">testPostUserDDT</a></td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">api.test.DataDrivenTests#testDeleteUseDDT</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>testuser2</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">api.test.DataDrivenTests#testDeleteUseDDT</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>testuser3</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">api.test.DataDrivenTests#testDeleteUseDDT</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>testuser4</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">api.test.DataDrivenTests#testDeleteUseDDT</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>testuser5</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">api.test.DataDrivenTests#testDeleteUseDDT</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>testuser1</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">api.test.DataDrivenTests#testDeleteUserDDT</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>testuser1</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [200] but found [404]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1383)
+	at org.testng.Assert.assertEquals(Assert.java:1429)
+	at api.test.DataDrivenTests.testDeleteUserDDT(DataDrivenTests.java:29)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">api.test.DataDrivenTests#testDeleteUserDDT</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>testuser2</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [200] but found [404]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1383)
+	at org.testng.Assert.assertEquals(Assert.java:1429)
+	at api.test.DataDrivenTests.testDeleteUserDDT(DataDrivenTests.java:29)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">api.test.DataDrivenTests#testDeleteUserDDT</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>testuser4</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [200] but found [404]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1383)
+	at org.testng.Assert.assertEquals(Assert.java:1429)
+	at api.test.DataDrivenTests.testDeleteUserDDT(DataDrivenTests.java:29)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">api.test.DataDrivenTests#testDeleteUserDDT</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>testuser5</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">api.test.DataDrivenTests#testDeleteUserDDT</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>testuser3</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m5">api.test.DataDrivenTests#testPostUserDDT</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>1015</td><td>testuser5</td><td>Prajkta</td><td>Mali</td><td>test5@gmail.com</td><td>test@5</td><td>1234567899</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">api.test.DataDrivenTests#testPostUserDDT</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>1011</td><td>testuser1</td><td>John</td><td>Cena</td><td>test1@gmail.com</td><td>test@1</td><td>1234567895</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">api.test.DataDrivenTests#testPostUserDDT</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>1014</td><td>testuser4</td><td>Rishabh</td><td>Pant</td><td>test4@gmail.com</td><td>test@4</td><td>1234567898</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">api.test.DataDrivenTests#testPostUserDDT</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>1012</td><td>testuser2</td><td>Rohit </td><td>Sharma</td><td>test2@gmail.com</td><td>test@2</td><td>1234567896</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m9">api.test.DataDrivenTests#testPostUserDDT</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>1013</td><td>testuser3</td><td>Virat</td><td>Kohli</td><td>test3@gmail.com</td><td>test@3</td><td>1234567897</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m10">api.test.UserTests#testDeleteUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m11">api.test.UserTests#testGetUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m12">api.test.UserTests#testPostUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m13">api.test.UserTests#testUpdateUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">api.test.DataDrivenTests#testPostUserDDT</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>1012</td><td>testuser2</td><td>Rohit </td><td>Sharma</td><td>test2@gmail.com</td><td>test@2</td><td>1234567896</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">api.test.DataDrivenTests#testPostUserDDT</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>1013</td><td>testuser3</td><td>Virat</td><td>Kohli</td><td>test3@gmail.com</td><td>test@3</td><td>1234567897</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">api.test.DataDrivenTests#testPostUserDDT</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>1011</td><td>testuser1</td><td>John</td><td>Cena</td><td>test1@gmail.com</td><td>test@1</td><td>1234567895</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">api.test.DataDrivenTests#testPostUserDDT</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>1014</td><td>testuser4</td><td>Rishabh</td><td>Pant</td><td>test4@gmail.com</td><td>test@4</td><td>1234567898</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

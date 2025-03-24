@@ -8,8 +8,10 @@ import io.restassured.response.Response;
 
 public class UserEndpoints {
 
+	public static Response response;
+	
 	public static Response createUser(User userData) {
-		Response response = given().contentType(ContentType.JSON).accept(ContentType.JSON).body(userData)
+		response = given().contentType(ContentType.JSON).accept(ContentType.JSON).body(userData)
 
 				.when().post(Routes.post_url);
 
@@ -17,7 +19,7 @@ public class UserEndpoints {
 	}
 
 	public static Response readUser(String username) {
-		Response response = given().pathParam("username", username)
+		response = given().pathParam("username", username)
 
 				.when().get(Routes.get_url);
 
@@ -25,7 +27,7 @@ public class UserEndpoints {
 	}
 
 	public static Response updateUser(String username, User userData) {
-		Response response = given().contentType(ContentType.JSON).accept(ContentType.JSON).body(userData)
+		response = given().contentType(ContentType.JSON).accept(ContentType.JSON).body(userData)
 				.pathParam("username", username)
 
 				.when().put(Routes.put_url);
@@ -34,7 +36,7 @@ public class UserEndpoints {
 	}
 
 	public static Response deleteUser(String username) {
-		Response response = given().pathParam("username", username)
+		response = given().pathParam("username", username)
 
 				.when().delete(Routes.delete_url);
 

@@ -5,48 +5,50 @@ import org.testng.annotations.DataProvider;
 
 public class DataProviders {
 
+	private static ExcelUtility excelUtil;
+	private static String path = ".\\TestData\\data driven test.xlsx";
+	private static final String SHEET_NAME = "Sheet1";
+	
     @DataProvider(name = "myDDTData")
-    public String[][] getAllData() throws IOException  {
-        String path = ".\\TestData\\data driven test.xlsx";
-        ExcelUtility excelUtil = new ExcelUtility(path);
+    public Object[][] getAllData() throws IOException  {
+        excelUtil = new ExcelUtility(path);
 
         try {
-            int rowCount = excelUtil.getRowCount("Sheet1");
+            int rowCount = excelUtil.getRowCount(SHEET_NAME);
             if (rowCount <=1) {
-                throw new IllegalArgumentException("Sheet1 has no data rows.");
+                throw new IllegalArgumentException(SHEET_NAME+ " Sheet has no data rows.");
             }
-            int colCount = excelUtil.getCellCount("Sheet1", 1); // Assuming row 1 contains data
-            String apiData[][] = new String[rowCount-1][colCount]; //Exclude header row
+            int colCount = excelUtil.getCellCount(SHEET_NAME, 1); // Assuming row 1 contains data
+            Object data[][] = new Object[rowCount-1][colCount]; //Exclude header row
 
             // Populate data from Excel
             for (int i =1; i < rowCount; i++) {
                 for (int j = 0; j < colCount; j++) {
-                    apiData[i-1][j] = excelUtil.getCellData("Sheet1", i, j);
+                    data[i-1][j] = excelUtil.getCellData(SHEET_NAME, i, j);
                 }
             }
-            return apiData;
+            return data;
         } finally {
             excelUtil.close();
         }
     }
 
     @DataProvider(name = "UserNames")
-    public String[] getUserNames() throws IOException {
-        String path = ".\\TestData\\data driven test.xlsx";
-        ExcelUtility excelUtil = new ExcelUtility(path);
+    public Object[] getUserNames() throws IOException {
+        excelUtil = new ExcelUtility(path);
 
         try {
-            int rowCount = excelUtil.getRowCount("Sheet1");
+            int rowCount = excelUtil.getRowCount(SHEET_NAME);
             if (rowCount <=1) {
-                throw new IllegalArgumentException("Sheet1 has no data rows.");
+                throw new IllegalArgumentException(SHEET_NAME + " Sheet1 has no data rows.");
             }
-            String[] apidata = new String[rowCount-1];  //Exclude header row
+            Object[] data = new Object[rowCount-1];  //Exclude header row
 
             // Populate data for userName column
             for (int i =1; i < rowCount; i++) {
-            	apidata[i-1] = excelUtil.getCellData("Sheet1", i, 1); // Assuming column 1 contains usernames
+            	data[i-1] = excelUtil.getCellData(SHEET_NAME, i, 1); // Assuming column 1 contains usernames
             }
-            return apidata;
+            return data;
         } finally {
             excelUtil.close();
         }

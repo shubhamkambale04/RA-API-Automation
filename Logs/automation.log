@@ -1,55 +1,51 @@
-22:02:19:024 [main] INFO  api.test.UserTests - user deleted
-22:03:20:046 [main] INFO  api.test.UserTests - creating user
-22:03:21:618 [main] INFO  api.test.UserTests - user created
-22:03:21:621 [main] INFO  api.test.UserTests - reading user
-22:03:23:198 [main] INFO  api.test.UserTests - user displayed
-22:03:23:202 [main] INFO  api.test.UserTests - updating user
-22:03:24:857 [main] INFO  api.test.UserTests - user updated
-22:03:26:336 [main] INFO  api.test.UserTests - updated user displayed
-22:03:26:342 [main] INFO  api.test.UserTests - deleting user
-22:03:28:001 [main] INFO  api.test.UserTests - user deleted
-23:01:33:149 [main] INFO  api.test.UserTests - creating user
-23:01:34:683 [main] INFO  api.test.UserTests - user created
-23:01:34:686 [main] INFO  api.test.UserTests - reading user
-23:01:36:078 [main] INFO  api.test.UserTests - user displayed
-23:01:36:082 [main] INFO  api.test.UserTests - updating user
-23:01:37:647 [main] INFO  api.test.UserTests - user updated
-23:01:39:159 [main] INFO  api.test.UserTests - updated user displayed
-23:01:39:165 [main] INFO  api.test.UserTests - deleting user
-23:01:40:723 [main] INFO  api.test.UserTests - user deleted
-17:28:19:738 [main] INFO  api.test.UserTests - creating user
-17:28:21:272 [main] INFO  api.test.UserTests - user created
-17:28:21:274 [main] INFO  api.test.UserTests - reading user
-17:28:22:870 [main] INFO  api.test.UserTests - user displayed
-17:28:22:877 [main] INFO  api.test.UserTests - updating user
-17:28:24:356 [main] INFO  api.test.UserTests - user updated
-17:28:26:001 [main] INFO  api.test.UserTests - updated user displayed
-17:28:26:009 [main] INFO  api.test.UserTests - deleting user
-17:28:27:395 [main] INFO  api.test.UserTests - user deleted
-11:52:38:583 [main] INFO  api.test.UserTests - creating user
-11:52:44:209 [main] INFO  api.test.UserTests - user created
-11:52:44:251 [main] INFO  api.test.UserTests - reading user
-11:52:45:573 [main] INFO  api.test.UserTests - user displayed
-11:52:45:579 [main] INFO  api.test.UserTests - updating user
-11:52:46:862 [main] INFO  api.test.UserTests - user updated
-11:52:48:052 [main] INFO  api.test.UserTests - updated user displayed
-11:52:48:059 [main] INFO  api.test.UserTests - deleting user
-11:52:49:244 [main] INFO  api.test.UserTests - user deleted
-11:57:17:133 [main] INFO  api.test.UserTests - creating user
-11:57:22:389 [main] INFO  api.test.UserTests - user created
-11:57:22:414 [main] INFO  api.test.UserTests - reading user
-11:57:23:728 [main] INFO  api.test.UserTests - user displayed
-11:57:23:735 [main] INFO  api.test.UserTests - updating user
-11:57:25:009 [main] INFO  api.test.UserTests - user updated
-11:57:26:291 [main] INFO  api.test.UserTests - updated user displayed
-11:57:26:302 [main] INFO  api.test.UserTests - deleting user
-11:57:27:558 [main] INFO  api.test.UserTests - user deleted
-12:08:02:647 [main] INFO  api.test.UserTests - creating user
-12:08:07:500 [main] INFO  api.test.UserTests - user created
-12:08:07:516 [main] INFO  api.test.UserTests - reading user
-12:08:08:817 [main] INFO  api.test.UserTests - user displayed
-12:08:08:841 [main] INFO  api.test.UserTests - updating user
-12:08:10:114 [main] INFO  api.test.UserTests - user updated
-12:08:11:359 [main] INFO  api.test.UserTests - updated user displayed
-12:08:11:380 [main] INFO  api.test.UserTests - deleting user
-12:08:12:677 [main] INFO  api.test.UserTests - user deleted
+15:53:54:653 [main] INFO  api.payload.UserDataManager - Creating user using DataProvider...
+15:53:54:670 [main] INFO  api.payload.UserDataManager - Created User from Data Provider: testuser2
+15:53:58:214 [main] INFO  api.payload.UserDataManager - Creating user using DataProvider...
+15:53:58:215 [main] INFO  api.payload.UserDataManager - Created User from Data Provider: testuser3
+15:54:01:620 [main] INFO  api.payload.UserDataManager - Creating user using DataProvider...
+15:54:01:620 [main] INFO  api.payload.UserDataManager - Created User from Data Provider: testuser4
+15:54:05:150 [main] INFO  api.payload.UserDataManager - Creating user using DataProvider...
+15:54:05:152 [main] INFO  api.payload.UserDataManager - Created User from Data Provider: testuser5
+15:55:56:347 [main] INFO  api.payload.UserDataManager - Setting up UserTests - Generating Random User Data
+15:55:56:614 [main] INFO  api.payload.UserDataManager - Generated Random User: wynell.brown
+15:55:57:672 [main] INFO  api.payload.UserDataManager - creating user
+15:56:01:435 [main] INFO  api.payload.UserDataManager - user created
+15:56:02:456 [main] INFO  api.payload.UserDataManager - Cleaning up UserTests data...
+15:59:30:550 [main] INFO  api.payload.UserDataManager - Setting up UserTests - Generating Random User Data
+16:01:01:665 [main] INFO  api.payload.UserDataManager - Generated Random User: bobby.bergnaum
+16:01:23:694 [main] INFO  api.payload.UserDataManager - creating user
+16:02:11:869 [main] INFO  api.payload.UserDataManager - user created
+16:07:59:770 [main] INFO  api.payload.UserDataManager - Setting up UserTests - Generating Random User Data
+16:08:01:566 [main] INFO  api.payload.UserDataManager - Generated Random User: fermin.gusikowski
+16:08:06:315 [main] INFO  api.payload.UserDataManager - creating user
+16:08:10:363 [main] INFO  api.payload.UserDataManager - user created
+16:08:22:603 [main] INFO  api.payload.UserDataManager - reading user
+16:08:24:400 [main] INFO  api.payload.UserDataManager - user displayed
+16:08:29:245 [main] INFO  api.payload.UserDataManager - updating user
+16:08:35:507 [main] INFO  api.payload.UserDataManager - user updated
+16:08:37:125 [main] INFO  api.payload.UserDataManager - updated user displayed
+16:08:41:925 [main] INFO  api.payload.UserDataManager - deleting user
+16:08:43:361 [main] INFO  api.payload.UserDataManager - user deleted
+16:08:48:705 [main] INFO  api.payload.UserDataManager - Cleaning up UserTests data...
+16:09:07:363 [main] INFO  api.payload.UserDataManager - Setting up UserTests - Generating Random User Data
+16:09:07:645 [main] INFO  api.payload.UserDataManager - Generated Random User: ulysses.sipes
+16:09:08:688 [main] INFO  api.payload.UserDataManager - creating user
+16:09:12:471 [main] INFO  api.payload.UserDataManager - user created
+16:09:14:503 [main] INFO  api.payload.UserDataManager - reading user
+16:09:16:143 [main] INFO  api.payload.UserDataManager - user displayed
+16:09:18:196 [main] INFO  api.payload.UserDataManager - updating user
+16:09:19:731 [main] INFO  api.payload.UserDataManager - user updated
+16:09:21:233 [main] INFO  api.payload.UserDataManager - updated user displayed
+16:09:23:263 [main] INFO  api.payload.UserDataManager - deleting user
+16:09:24:826 [main] INFO  api.payload.UserDataManager - user deleted
+16:09:25:840 [main] INFO  api.payload.UserDataManager - Cleaning up UserTests data...
+16:10:13:716 [main] INFO  api.payload.UserDataManager - Creating user using DataProvider...
+16:10:13:723 [main] INFO  api.payload.UserDataManager - Created User from Data Provider: testuser1
+16:10:19:496 [main] INFO  api.payload.UserDataManager - Creating user using DataProvider...
+16:10:19:497 [main] INFO  api.payload.UserDataManager - Created User from Data Provider: testuser2
+16:10:23:107 [main] INFO  api.payload.UserDataManager - Creating user using DataProvider...
+16:10:23:109 [main] INFO  api.payload.UserDataManager - Created User from Data Provider: testuser3
+16:10:26:687 [main] INFO  api.payload.UserDataManager - Creating user using DataProvider...
+16:10:26:689 [main] INFO  api.payload.UserDataManager - Created User from Data Provider: testuser4
+16:10:30:314 [main] INFO  api.payload.UserDataManager - Creating user using DataProvider...
+16:10:30:315 [main] INFO  api.payload.UserDataManager - Created User from Data Provider: testuser5
